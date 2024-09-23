@@ -43,11 +43,11 @@ export default function EmployeeRender({ employees }: Props) {
   return (
     <article className="min-w-max">
       {employees.map((emp) => (
-        <div key={emp.mail} className="flex border justify-between hover:bg-slate-50">
-          <div
-            style={{ minWidth: "285px" }}
-            className="flex px-4 py-3 gap-[6px]"
-          >
+        <div
+          key={emp.mail}
+          className="flex border justify-between hover:bg-slate-50"
+        >
+          <div className="flex px-4 py-3 gap-[6px] min-w-[285px]">
             <Image
               src={emp.avatar}
               alt={"photo-employee"}
@@ -61,18 +61,12 @@ export default function EmployeeRender({ employees }: Props) {
             </div>
           </div>
 
-          <div
-            style={{ minWidth: "191px" }}
-            className="flex px-4 py-3 flex-col"
-          >
+          <div className="flex px-4 py-3 flex-col min-w-[191px]">
             <p className="text-xs text-black">{formatDate(emp.lastLogin)}</p>
             <p className="text-xs text-[#808080]">{daysAgo(emp.lastLogin)}</p>
           </div>
 
-          <div
-            style={{ minWidth: "174px" }}
-            className="flex px-4 py-3 items-center"
-          >
+          <div className="flex px-4 py-3 items-center min-w-[174px]">
             <p
               className={`text-black ${
                 emp.department === "Research and Development"

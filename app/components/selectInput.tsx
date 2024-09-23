@@ -11,7 +11,6 @@ import {
   SelectValue,
 } from "@/componentsShadcn/ui/select";
 
-
 type Props = {
   departments?: DepartmentQtd[];
   typeSelect: "Departments" | "Status";
@@ -25,14 +24,13 @@ export function SelectInput({
   setSearchStatus,
   setSearchDepatment,
 }: Props) {
-
   function handleSelectChange(value: string) {
     if (setSearchDepatment) setSearchDepatment(value);
     if (setSearchStatus) setSearchStatus(value);
   }
 
   return (
-    <div style={{ minWidth: "174px" }}>
+    <div className="min-w-[174px]">
       <Select onValueChange={handleSelectChange}>
         <SelectTriggerNoIcon className="text-[#00000080] text-xs font-semibold pl-4 h-14 w-full duration-300 hover:bg-slate-50">
           {typeSelect === "Departments" && (

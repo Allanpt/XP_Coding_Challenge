@@ -71,7 +71,7 @@ export default function EmployeeTable({ employees, departments }: Props) {
       <article className="border border-[#0000001A] bg-white rounded-t-md sticky z-[1] w-full top-14 min-w-[826px]">
         <div className="flex justify-between ">
           <CustomInput
-            style={{ minWidth: "285px" }}
+            className="min-w-[285px]"
             type="text"
             placeholder="Employee"
             onChange={(e) => setSearchEmployee(e.target.value)}

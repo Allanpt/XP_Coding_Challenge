@@ -31,9 +31,9 @@ export default function UserMenu() {
               className="self-start"
             />
 
-            <div style={{ gap: "5px" }} className="flex flex-col">
-              <p style={{ color: "#4A5568" }}>My Profile</p>
-              <p style={{ color: "#A0AEC0" }} className="text-xs">
+            <div className="flex flex-col gap-[5px]">
+              <p className="text-[#4A5568]">My Profile</p>
+              <p className="text-xs text-[#A0AEC0]">
                 Change settings of your account.
               </p>
             </div>
@@ -48,7 +48,7 @@ export default function UserMenu() {
               className="self-start"
             />
 
-            <p style={{ color: "#E53E3E" }}>Logout</p>
+            <p className="text-#E53E3E">Logout</p>
           </DropdownMenuLabel>
         </DropdownMenuContent>
       </DropdownMenu>

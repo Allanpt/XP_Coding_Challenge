@@ -21,7 +21,7 @@ type Props = {
 };
 export function DateInput({ date, setDate }: Props) {
   return (
-    <div style={{ minWidth: "191px" }}>
+    <div className="min-w-[191px]">
       <Popover>
         <PopoverTrigger asChild>
           <Button

@@ -24,7 +24,7 @@ export default function SelectStatusRender({ isActive }: Props) {
   };
 
   return (
-    <div style={{ minWidth: "174px" }} className="px-4">
+    <div className="px-4 min-w-[174px]">
       <Select onValueChange={handleSelectChange}>
         <SelectTrigger
           className={`font-semibold text-xs ${
